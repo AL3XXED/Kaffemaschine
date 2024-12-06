@@ -30,14 +30,9 @@ namespace Kaffemaschine
             //Aufgabe 4c: Verlagern Sie alle bisherigen Methodenaufrufe aus der Programm.cs in die Methode aus 4b.
             //Diese Methode soll es dann ermöglichen nach Nutzereingabe entweder einen Kaffe zu bekommen oder eine der Auffüllmethoden auszuführen.
 
-            Console.WriteLine("-~-> Willkommen beim Kaff-o-mat <-~-\n\n");
-
-            Console.WriteLine($"Maximale Bohnenmenge:{Kaffeemaschine.MaxBohnenmenge}g.");
-            Console.WriteLine($"Maximale Wassermenge:{Kaffeemaschine.MaxWasserstand}ml.\n");
-
             Kaffeemaschine Status = new Kaffeemaschine(Kaffeemaschine.MaxWasserstand, Kaffeemaschine.MaxBohnenmenge);
 
-            Status.wiederholen();
+            Status.menue();
 
             Console.Clear();
 
